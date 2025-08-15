@@ -9,19 +9,19 @@ function showAlertError() {
 
 //Acá empieza la validación de que ningún campo esté vacío y de contraseña, uní ambas para que no se repita el addEventListener
 
-document.getElementById("regBtn").addEventListener("click", function (){
+document.getElementById("regBtn").addEventListener("click", function() {
+    let nombre = document.getElementById("nombre").value.trim();
+    let apellido = document.getElementById("apellido").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let pass1 = document.getElementById("password1").value.trim();
+    let pass2 = document.getElementById("password2").value.trim();
 
-let nombre = document.getElementById("nombre").value.trim();
-let apellido = document.getElementById("apellido").value.trim();
-let email = document.getElementById("email").value.trim();
-let pass1 = document.getElementById("password1").value.trim();
-let pass2 = document.getElementById("password2").value.trim();
-
-if (nombre === "" || apellido === "" || email === "" || pass1 === "" || pass2 === ""){
-    showAlertError();
-} else if (pass1 !== pass2) {
-    showAlertError();}
-    else{
+    if (nombre === "" || apellido === "" || email === "" || pass1 === "" || pass2 === "") {
+        showAlertError();
+    } else if (pass1 !== pass2) {
+        showAlertError();
+    } else {
         showAlertSuccess();
     }
-})
+});
+
