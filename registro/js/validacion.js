@@ -8,7 +8,7 @@ function showAlertError() {
 
 
  document.getElementById("regBtn").addEventListener ("click", function() { 
- const password = document.getElementById("password").value; 
+  const password = document.getElementById("password1").value; 
 if (password.length < 6) { showAlertError();
 
  } else { showAlertSucess();

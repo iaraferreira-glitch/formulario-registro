@@ -9,7 +9,7 @@ function showAlertError() {
 const checkbox = document.getElementById("terminos");
 const label = document.querySelector('label[for="terminos"]');
 
-label.addEventListener("click", function (e) {
+document.getElementById("regBtn").addEventListener("click", function () {
   if (!checkbox.checked) {
     showAlertError();
   } else {
