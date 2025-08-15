@@ -6,6 +6,13 @@ function showAlertError() {
   document.getElementById("alert-danger").classList.add("show");
 }
 
+function showAlertError() { const password = document.getElementById("password").value; 
+if (password.length < 6) { document.getElementById("alert-danger").classList.add("show");
+
+ } else { document.getElementById("alert-danger").classList.remove("show"); 
+  } 
+}
+
 
 //Acá empieza la validación de que ningún campo esté vacío y de contraseña, uní ambas para que no se repita el addEventListener
 
