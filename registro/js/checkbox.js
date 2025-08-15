@@ -7,7 +7,7 @@ function showAlertError() {
 }
 
 const checkbox = document.getElementById("terminos");
-const label = document.getElementsByClassName("formCheckLabel");
+const label = document.querySelector('label[for="terminos"]');
 
 label.addEventListener("click", function (e) {
   if (!checkbox.checked) {
